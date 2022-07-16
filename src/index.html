@@ -9,10 +9,121 @@
 </head>
 <body>
 
-    <div>1</div>
-    <div>2</div>
-    <div>3</div>
-    <button>Click me</button>
+<div class="container">
+    <button class="btn btn-primary m20" id="first">Fade out first text</button>
+    <button class="btn btn-dark m20" data-count="second">Fade out second text</button>
+    <button class="btn btn-warning m20">Fade out all text</button>
+    
+    <!-- Dropdown menu -->
+    <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" id="dropdownMenuButton">Dropdown button</button>
+        <div class="dropdown-menu" data-toggle-id="dropdownMenuButton">
+            <a href="#" class="dropdown-item">Action #1</a>
+            <a href="#" class="dropdown-item">Action #2</a>
+            <a href="#" class="dropdown-item">Action #3</a>
+        </div>
+    </div>
+
+
+    <!-- Card -->
+    <div class="goods d-flex f-space-around">
+        <div class="card">
+            <img class="card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuiuiYY--ENGKHCxoshOIavDEMIyHjKkpARw&usqp=CAU" alt="photo">
+            <div class="card-body">
+                <div class="card-title">Card title #1</div>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dolor? Eaque laboriosam temporibus nam accusamus molestias odit eos.</p>
+                <a href="#" id='trigger' class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Link to</a>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuiuiYY--ENGKHCxoshOIavDEMIyHjKkpARw&usqp=CAU" alt="photo">
+            <div class="card-body">
+                <div class="card-title">Card title #2</div>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, dolor? Eaque laboriosam temporibus nam accusamus molestias odit eos.</p>
+                <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal2">Link to</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <!-- <div class="modal" id="exampleModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button class="close" data-close>
+                    <span>&times;</span>
+                </button>
+                <div class="modal-header">
+                    <div class="modal-title">
+                        Modal title
+                    </div>
+                </div>
+                <div class="modal-body">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi reiciendis inventore rerum facilis quidem porro dolorum quis itaque modi alias obcaecati soluta, aliquid voluptas assumenda. Blanditiis tempora dolorem sint harum!
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" data-close>Close</button>
+                    <button class="btn btn-success">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Tabs -->
+    <div class="tab mt20 block-center">
+        <div class="tab-panel" data-tabpanel>
+            <div class="tab-item tab-item--active">Content #1</div>
+            <div class="tab-item">Content #2</div>
+            <div class="tab-item">Content #3</div>
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" id="dropdownMenuButton2">Dropdown button</button>
+                <div class="dropdown-menu" data-toggle-id="dropdownMenuButton2">
+                    <a href="#" class="dropdown-item">Action #1</a>
+                    <a href="#" class="dropdown-item">Action #2</a>
+                    <a href="#" class="dropdown-item">Action #3</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content tab-content--active">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, odio? Distinctio vitae facilis error eaque doloribus minus deserunt in, tenetur odit consequatur vero explicabo voluptas iste possimus ullam? Quaerat, vero!
+            <br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus neque porro aut aliquid. Doloremque ipsa eos explicabo optio excepturi cupiditate libero. Ratione mollitia dignissimos aspernatur at officia voluptatem excepturi quis?
+        </div>
+        <div class="tab-content">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, odio? Distinctio vitae facilis error eaque doloribus minus deserunt in, tenetur odit consequatur vero explicabo voluptas iste possimus ullam? Quaerat, vero!
+            <br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus neque porro aut aliquid. Doloremque ipsa eos explicabo optio excepturi cupiditate libero. Ratione mollitia dignissimos aspernatur at officia voluptatem excepturi quis?
+            <br><br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus neque porro aut aliquid. Doloremque ipsa eos explicabo optio excepturi cupiditate libero. Ratione mollitia dignissimos aspernatur at officia voluptatem excepturi quis?
+        </div>
+        <div class="tab-content">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis, odio? Distinctio vitae facilis error eaque doloribus minus deserunt in, tenetur odit consequatur vero explicabo voluptas iste possimus ullam? Quaerat, vero!
+        </div>
+    </div>
+
+    <!-- Accordion || CollapseElement -->
+    <div class="accordion mt20 block-center">
+        <div class="accordion-head">
+            <span>Collapse first element</span>
+        </div>
+        <div class="accordion-content">
+            <div class="accordion-inner">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id, quae delectus nam quod maiores quaerat, sunt quibusdam autem provident corporis natus. Cumque, assumenda. Porro incidunt aliquam omnis error, quaerat nisi?
+            </div>
+        </div>
+        <div class="accordion-head">
+            <span>Collapse second element</span>
+        </div>
+        <div class="accordion-content">
+            <div class="accordion-inner">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id, quae delectus nam quod maiores quaerat, sunt quibusdam autem provident corporis natus. Cumque, assumenda. Porro incidunt aliquam omnis error, quaerat nisi?
+            </div>
+        </div>
+        
+    </div>
+
+</div>
+    
     
     <script src='script.js'></script>
 </body>
